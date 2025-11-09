@@ -1,0 +1,32 @@
+# Visual Studio
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build artifacts
+[Bb]in/
+[Oo]bj/
+build/
+TestResults/
+
+# NuGet & packages
+packages/
+*.nupkg
+.nuget/
+
+# Logs, caches, temporary files
+*.log
+*.cache
+*.tmp
+*.bak
+
+# IDEs / editors
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

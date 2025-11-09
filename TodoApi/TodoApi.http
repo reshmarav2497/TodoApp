@@ -1,0 +1,27 @@
+@rootUrl = http://localhost:5017
+
+GET {{rootUrl}}/api/todos
+Accept: application/json
+
+###
+POST {{rootUrl}}/api/todos
+Content-Type: application/json
+{
+  "title": "Wash Clothes",
+  "description": "Wash Clothes",
+  "isCompleted": false
+}
+
+###
+PUT {{rootUrl}}/api/todos/2
+Content-Type: application/json
+{
+  "id": 2,
+  "title": "Wash Clothes",
+  "description": "Wash Clothes",
+  "isCompleted": true
+}
+
+###
+DELETE {{rootUrl}}/api/todos/2
+Accept: application/json
