@@ -58,7 +58,6 @@ namespace TodoApi.Controllers
                 return NotFound($"Todo with ID {id} not found.");
 
             todo.Title = newTodo.Title;
-            todo.Description = newTodo.Description;
             todo.IsCompleted = newTodo.IsCompleted;
 
             await _context.SaveChangesAsync();

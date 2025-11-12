@@ -1,0 +1,25 @@
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0b1d32;
+  font-family: Georgia;
+}
+
+.App-header {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px 0;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .App-header {
+    margin: 15px 0;
+    font-size: 35px;
+  }
+}
