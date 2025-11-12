@@ -3,7 +3,7 @@
 A full-stack **Todo Application** built using **React + TypeScript (Vite)** for the frontend and **.NET 8 Web API** for the backend.  
 The app allows users to add, update, mark complete, and delete todos, with data persisted to a SQL database (LocalDB/Azure SQL).
 
-[Link](https://todo-app-rho-sable.vercel.app{target=_blank})
+[Link](https://todo-app-rho-sable.vercel.app)
 
 ---
 
