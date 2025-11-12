@@ -36,6 +36,13 @@ const App: React.FC = () => {
       setTodo("");
     } catch (error) {
       console.log("Error adding todo:", error);
+      const newTodo: Todo = {
+        id: Date.now(),
+        title: todo.trim(),
+        isCompleted: false,
+      };
+      setTodos((prevTodos) => [newTodo, ...prevTodos]);
+      setTodo("");
     }
   };
 

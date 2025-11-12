@@ -35,12 +35,12 @@ const TodoCard: React.FC<TodoCardProps> = ({ todo, todos, setTodos }) => {
       const updatedTodo = todos.find((t) => t.id === id);
       if (!updatedTodo) return;
 
-      await api.put(`/todos/${id}`, { ...updatedTodo, title: editTodo });
-      setTodos(todos.map((t) => (t.id === id ? { ...t, title: editTodo } : t)));
-      setEdit(false);
+      await api.put(`/todos/${id}`, { ...updatedTodo, title: editTodo.trim() });
     } catch (err) {
       console.error("Error editing todo", err);
     }
+    setTodos(todos.map((t) => (t.id === id ? { ...t, title: editTodo.trim() } : t)));
+    setEdit(false);
   };
 
   const handleDelete = async (id: number) => {
